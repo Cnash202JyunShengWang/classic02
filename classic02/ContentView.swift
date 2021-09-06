@@ -9,24 +9,58 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            Text("i am good")
-                .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                .font(.title)
-                .padding(.top,40)
+        ZStack{
+            VStack{
+                VStack{
+                Image(systemName:"swift")
+                    .resizable()                .frame(width: 80, height:80, alignment: .center)
+                Text("Roy-28%完成度")
+                    .font(.title3)
+                    .frame( width: 200, height: 100, alignment: .center)
+                }
+            Rectangle()
+                .foregroundColor(Color(#colorLiteral(red: 0.7159921956, green: 0.8880700713, blue: 1, alpha: 1)))
+                .frame(width: 380, height: 400, alignment: .top)
+                .shadow(color: Color.gray.opacity(0.2), radius: 20, x: 0, y: 20)
+                Spacer()
+            }
+            VStack{
+                Spacer()
+                HStack{
+                    Image(systemName: "paperplane.circle")
+                        .resizable()
+                        .frame(width: 50, height: 50/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.top)
+                        .padding()
+                    Text("Account")
+                        .font(.title2)
+                        .padding()
+                }
+                HStack{
+                    Image(systemName: "folder")
+                        .resizable()
+                        .frame(width: 50/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.bottom)
+                        .padding()
+                    Text("Billing")
+                        .font(.title2)
+                        .padding()
+                }
+                HStack{
+                    Image(systemName: "person.circle")
+                        .resizable()
+                        .frame(width: 50/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center)
+                        .padding()
+                    Text("sign out")
+                        .font(.title3)
+                        .padding()
+                    
+                }
+                Spacer()
             
-            Text("i am good")
-                .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                .font(.title)
-                .padding(.bottom,40)
-        }
-        .frame(width: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-        .frame(maxWidth:.infinity)
-        .background(Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)))
-        .cornerRadius(26)
-        .padding()
+            }
+  
     }
     
+ }
 }
 
 struct ContentView_Previews: PreviewProvider {
