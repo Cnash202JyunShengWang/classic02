@@ -10,57 +10,56 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            VStack{
-                VStack{
-                Image(systemName:"swift")
-                    .resizable()                .frame(width: 80, height:80, alignment: .center)
-                Text("Roy-28%完成度")
-                    .font(.title3)
-                    .frame( width: 200, height: 100, alignment: .center)
-                }
             Rectangle()
-                .foregroundColor(Color(#colorLiteral(red: 0.7159921956, green: 0.8880700713, blue: 1, alpha: 1)))
+                .foregroundColor(Color(#colorLiteral(red: 0.8876258614, green: 0.8876258614, blue: 0.8876258614, alpha: 1)))
                 .frame(width: 380, height: 400, alignment: .top)
-                .shadow(color: Color.gray.opacity(0.2), radius: 20, x: 0, y: 20)
-                Spacer()
-            }
+                .cornerRadius(26)
+                .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+            Image(systemName:"swift")
+                .resizable()                .frame(width: 80, height:80, alignment: .top)
+                .offset(x: 10, y:-250)
+            Text("Roy-28%完成度")
+                .font(.title3)
+                .frame( width: 200, height: 100, alignment: .center)
+                .offset(x: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/, y: -150)
+            ZStack{
+              SecondView()
+                }
+            .offset(x: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/, y: -120)
             VStack{
-                Spacer()
                 HStack{
-                    Image(systemName: "paperplane.circle")
-                        .resizable()
-                        .frame(width: 50, height: 50/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.top)
-                        .padding()
-                    Text("Account")
-                        .font(.title2)
-                        .padding()
+            Image(systemName: "gear")
+                .resizable()
+                .frame(width: 50, height: 50/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.top)
+                .padding()
+            Text("Account")
+                .font(.title2)
+                .padding()
                 }
                 HStack{
-                    Image(systemName: "folder")
-                        .resizable()
-                        .frame(width: 50/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.bottom)
-                        .padding()
-                    Text("Billing")
-                        .font(.title2)
-                        .padding()
+            Image(systemName: "folder")
+                .resizable()
+                .frame(width: 50/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.bottom)
+                .padding(.trailing,35)
+            Text("Billing")
+                .font(.title2)
+                .padding(.trailing)
                 }
                 HStack{
                     Image(systemName: "person.circle")
                         .resizable()
                         .frame(width: 50/*@END_MENU_TOKEN@*/, height: 50, alignment: /*@START_MENU_TOKEN@*/.center)
                         .padding()
-                    Text("sign out")
+                    Text("Sign out")
                         .font(.title3)
                         .padding()
-                    
                 }
-                Spacer()
-            
             }
-  
+            .offset(x: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/, y: 50)
+            
+        
+        }
     }
-    
- }
 }
 
 struct ContentView_Previews: PreviewProvider {

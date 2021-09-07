@@ -11,6 +11,7 @@
 		DA60FA4826E2533600806E8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60FA4726E2533600806E8C /* ContentView.swift */; };
 		DA60FA4A26E2533E00806E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA60FA4926E2533E00806E8C /* Assets.xcassets */; };
 		DA60FA4D26E2533E00806E8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA60FA4C26E2533E00806E8C /* Preview Assets.xcassets */; };
+		DA60FA5526E5EB1B00806E8C /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60FA5426E5EB1B00806E8C /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		DA60FA4926E2533E00806E8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA60FA4C26E2533E00806E8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA60FA4E26E2533E00806E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA60FA5426E5EB1B00806E8C /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				DA60FA4526E2533600806E8C /* classic02App.swift */,
 				DA60FA4726E2533600806E8C /* ContentView.swift */,
+				DA60FA5426E5EB1B00806E8C /* SecondView.swift */,
 				DA60FA4926E2533E00806E8C /* Assets.xcassets */,
 				DA60FA4E26E2533E00806E8C /* Info.plist */,
 				DA60FA4B26E2533E00806E8C /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA60FA5526E5EB1B00806E8C /* SecondView.swift in Sources */,
 				DA60FA4826E2533600806E8C /* ContentView.swift in Sources */,
 				DA60FA4626E2533600806E8C /* classic02App.swift in Sources */,
 			);
