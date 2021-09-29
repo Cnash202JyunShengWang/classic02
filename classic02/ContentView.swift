@@ -16,7 +16,7 @@ struct ContentView: View {
                         SectionView(section: sec)
                             .rotation3DEffect(Angle(degrees:
                                 Double(geometry.frame(in: .global).minX - 30) / -20
-                            ), axis: (x: 0, y: 10, z: 0))
+                            ), axis: (x: 0, y: 20, z: 0))
                     }
                     .frame(width: 300, height: 300)
                 }
